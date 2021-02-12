@@ -12,11 +12,11 @@ if (n > 0)
 {
 while (a <= n)
 {
- _putchar('_');
+_putchar('_');
 a++;
 }
 _putchar('\n');
 }
 else
-_putchar('\n');
+putchar('\n');
 }
