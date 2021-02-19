@@ -1,0 +1,1 @@
+contains content f 0X06-pointers-arrays-strings
