@@ -19,7 +19,8 @@ if (s1 == NULL)
 s1 = empt;
 if (s2 == NULL)
 s2 = empt;
-for (i = 0; s1[i] != '\0'; i++);
+for (i = 0; s1[i] != '\0'; i++)
+;
 ptr = malloc((i + (n * sizeof(*s2) + 1) * sizeof(*ptr)));
 if (ptr == NULL)
 return (NULL);
