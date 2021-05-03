@@ -13,27 +13,27 @@
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 
-  dlistint_t *tmp, *newNode;
-  newNode = (dlistint_t *)malloc(sizeof(dlistint_t));
+dlistint_t *tmp, *newNode;
+newNode = (dlistint_t *)malloc(sizeof(dlistint_t));
 
-  if (!newNode)
-    {
-      printf("Error: malloc failed!");
-      return (NULL);
-    }
+if (!newNode)
+{
+printf("Error: malloc failed!");
+return (NULL);
+}
 
-  newNode->n = n;
-  newNode->prev = NULL;
-  tmp = *head;
-  if (tmp == NULL)
-    {
-      newNode->next = NULL;
-      *head = newNode;
-      return (newNode);
+newNode->n = n;
+newNode->prev = NULL;
+tmp = *head;
+if (tmp == NULL)
+{
+newNode->next = NULL;
+*head = newNode;
+return (newNode);
 
-    }
-  newNode->next = tmp;
-  tmp->prev = newNode;
-  *head = newNode;
-  return (newNode);
+}
+newNode->next = tmp;
+tmp->prev = newNode;
+*head = newNode;
+return (newNode);
 }
