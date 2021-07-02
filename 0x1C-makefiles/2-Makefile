@@ -1,0 +1,14 @@
+.PHONY = all clean
+
+CC = gcc
+SRC = $(wildcard *.c)
+OBJ = $(SRC:%.c=%.o)
+NAME = holberton
+
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
+%.o: %.c
+	${CC} -c ${SRC}
+
+clean:
+	rm *.o ${OBJ}
