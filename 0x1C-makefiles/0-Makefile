@@ -1,0 +1,6 @@
+.PHONY = all
+
+#CC = gcc
+# gcc main.c holberton.c -o holberton
+all: 
+	gcc main.c holberton.c -o holberton
