@@ -8,5 +8,5 @@ all: ${OBJ} m.h
 %.o: %.c
 	${CC} -c ${SRC}
 
-clean:
-	rm $(OBJ)
+#clean:
+
