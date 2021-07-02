@@ -3,10 +3,10 @@ SRC=main.c holberton.c
 OBJ=main.o holberton.o
 NAME=holberton
 
-all: ${OBJ}
+all: ${OBJ} m.h
 	${CC} ${OBJ} -o ${NAME}
 %.o: %.c
 	${CC} -c ${SRC}
 
 clean:
-	rm -f $(OBJ)
+	rm $(OBJ)
