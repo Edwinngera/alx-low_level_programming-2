@@ -1,9 +1,9 @@
-.PHONY = all clean
+.PHONY=all clean
 
-CC = gcc
-SRC = $(wildcard *.c)
-OBJ = $(SRC:%.c=%.o)
-NAME = holberton
+CC=gcc
+SRC=main.c holberton.c
+OBJ=main.o holberton.o
+NAME=holberton
 
 all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
@@ -11,4 +11,4 @@ all: ${OBJ}
 	${CC} -c ${SRC}
 
 clean:
-	rm *.o ${OBJ}
+	rm -f $(OBJ)
