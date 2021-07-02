@@ -1,5 +1,3 @@
-.PHONY=all clean
-
 CC=gcc
 SRC=main.c holberton.c
 OBJ=main.o holberton.o
